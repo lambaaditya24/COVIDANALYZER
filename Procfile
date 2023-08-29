@@ -1,1 +1,1 @@
-web: python -m http.server
+web: python -m SimpleHTTPServer
