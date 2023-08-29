@@ -1,0 +1,100 @@
+svg {
+    width: 100%;
+    /* border: 1px solid rgb(207, 207, 207); */
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+}
+
+.row-container {
+    display: flex;
+    flex-direction:row;
+}
+
+.column-container {
+    display: flex;
+    flex: 1;
+    flex-direction: column;
+}
+
+.div-views {
+    display: flex;
+    flex: 1;
+    margin: 5px;
+    border: 1px solid rgb(207, 207, 207);
+}
+
+.bg-custom {
+    background: #3f4955;
+}
+
+#row-1 {
+    min-height: 400px;
+}
+
+#row-2 {
+    max-height: 150px;
+}
+
+#div-cumulative-temporal-view {
+    max-width: 650px;
+}
+
+#div-filter-widget {
+    max-width: 200px;
+    min-width: 200px;
+}
+
+#div-ranking-type-view {
+    max-height: 100px;
+}
+
+#div-extension {
+    min-height: 250px;
+    margin-bottom: 20px;
+}
+
+div.map_tooltip {
+    /* Ref: https://bl.ocks.org/d3noob/97e51c5be17291f79a27705cef827da2 */
+    text-align: left;
+    padding: 8px;
+    font: 14px sans-serif;
+    background: white;
+    border: 2px;
+    border-radius: 8px;
+    border-color: black;
+    border-style: solid;
+    pointer-events: none;
+    position: absolute;
+}
+
+/*https://www.w3schools.com/howto/tryit.asp?filename=tryhow_css_icon_buttons */
+#map_reset {
+    position: absolute;
+    transform: translate(10px, 10px);
+    background-color: rgb(245, 245, 245);
+    /* https://css-tricks.com/almanac/properties/b/box-shadow/ */
+    box-shadow: 0px -1px 15px rgba(148, 148, 148, 0.452);
+}
+
+#map_select_single {
+    position: absolute;
+    transform: translate(10px, 55px);
+    background-color: rgb(245, 245, 245);
+    box-shadow: 0px 0px 15px rgba(148, 148, 148, 0.452);
+}
+
+#map_select_multiple {
+    position: absolute;
+    transform: translate(10px, 100px);
+    background-color: rgb(245, 245, 245);
+    box-shadow: 0px 1px 15px rgba(148, 148, 148, 0.452);
+}
+
+/* https://stackoverflow.com/questions/56638146/how-can-i-change-the-color-of-a-d3-brush */
+/* The color of the brush (multiple counties selection) */
+rect.selection {
+    fill: rgb(168, 215, 253);
+}
